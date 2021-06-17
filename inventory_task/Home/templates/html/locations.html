@@ -38,7 +38,7 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="{% url 'index' %}" style="font-size: 26px;">Inventory</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
         <span class="navbar-toggler-icon"></span>
       </button>
       
@@ -49,8 +49,9 @@
 
   <div class="templatemo-content-wrapper">
     <div class="templatemo-content">
+      <a href="{% url 'add_location' %}" class="btn btn-outline-dark btn-lg" style="margin-top: 50px; margin-left: 650px; width: 30%; font-size: 24px;" > Click Here to Add New Location </a>
         <h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; text-align: center; margin-top: 20px; margin-bottom: 30px;">Locations</h2>
-        <a href="{% url 'add_location' %}" class="btn btn-dark"> Add New Location </a>"
+        
       
       <table class="center">
           <tr>

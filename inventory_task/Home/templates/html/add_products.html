@@ -21,15 +21,19 @@
     <div class="container-sm">
         <form action="{% url 'add_product' %}" method="POST">
             {% csrf_token %}
-            <div class="col-8 mx-auto" style="margin-top: 10px; font-size: 22px; margin-bottom: 10px;">
-            <label for="from">Product name</label>
+            
+            <div class="col-4 mx-auto" style="margin-top: 10px; font-size: 22px; margin-bottom: 10px;">
+            <label for="from">Name</label>
             <input type='text' name="product_name">
             </div>
-            <div class="col-8 mx-auto" style="margin-top: 10px; font-size: 22px; margin-bottom: 10px;">
+            <div class="col-4 mx-auto" style="margin-top: 10px; font-size: 22px; margin-bottom: 10px;">
                 <label for="from">Price</label>
                 <input type='number' name="product_price">
-                </div>
-            <button type="submit" class="btn btn-dark">Submit</button>
+                
+                
+            <button type="submit" class="btn btn-dark" style="margin-top: 10px; font-size: 22px; margin-bottom: 10px;">Submit</button>
+            </div>
+            
         </form>
         </div>
         </body>
